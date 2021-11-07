@@ -117,7 +117,7 @@ const muestraConfigViaje = () => {
     `${select2.value}`,
     `${select3.value}`,
     100,
-    IMG/${select1.value}.jpg,
+    `IMG/${select1.value}.jpg`,
     0
   );
   sectionPromociones.style.display = "none";
@@ -153,24 +153,3 @@ const muestraConfigViaje = () => {
   });
   resetValores();
 };
-
-function precioDestino(elementosViaje) {
-  pedido.push(elementosViaje);
-}
-
-for (const precios of pedido) {
-}
-
-function filtroDestino(destinoFiltrado) {
-  let objeto = pedido.find(
-    (elemento) => elemento.nombre === destinoFiltrado.nombre
-  );
-  if (objeto) {
-    let precioDestino = objeto.precio;
-    console.log(objeto);
-  } else {
-    console.log("no va");
-  }
-}
-
-console.log(pedido);
