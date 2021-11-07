@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Primera entreja JS</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="anchorH1">Pasajes Aereos Rosario</a></h1>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >Ingresar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >Registrarse</a
+          >
+        </li>
+      </ul>
+
+      <div class="carrito">
+        <button
+          type="button"
+          id="modalCarrito"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDelCarro"
+        >
+          <img src="IMG/carrito.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section id="configuracionViaje">
+      <!-- EMPIEZA FORMULARIO -->
+
+      <div id="formulario">
+        <div class="cabecera">
+          <h1 class="tituloForm">Vuelos</h1>
+        </div>
+
+        <div class="selectDestino">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="select1"
+          >
+            <option selected disabled label="Destino"></option>
+            <!-- <option value="Barcelona" id="opt1">Barcelona</option>
+            <option value="Australia" id="opt2">Australia</option>
+            <option value="Copenhague" id="opt3">Copenhague</option> -->
+          </select>
+        </div>
+        <div class="selectAsiento">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="select2"
+          >
+            <option selected disabled label="Asiento"></option>
+            <!-- <option value="Economico" id="opt1">Economico</option>
+            <option value="Primera" id="opt2">Primera</option>
+            <option value="Business" id="opt3">Business</option> -->
+          </select>
+        </div>
+        <div class="selectEquipaje">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="select3"
+          >
+            <option selected disabled label="Equipaje"></option>
+            <!-- <option value="Mochila" id="opt1">Mochila</option>
+            <option value="Carry on" id="opt2">Carry on</option>
+            <option value="Valija" id="opt3">Valija</option> -->
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" id="btnEnviar">
+          Enviar
+        </button>
+        <p id="validaciones"></p>
+      </div>
+
+      <!-- TERMINA FORMULARIO -->
+
+      <!-- EMPIEZA CAROU -->
+
+      <div
+        id="carouselExampleCaptions"
+        class="carrusel carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item1 active">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="tituloCaption">Copenhague</h5>
+              <p class="parrafoCaption">Vuelos desde $150.000</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="tituloCaption">Sidney</h5>
+              <p class="parrafoCaption">Vuelos desde $130.000</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="tituloCaption">Barcelona</h5>
+              <p class="parrafoCaption">Vuelos desde $100.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TERMINA CAROU -->
+    </section>
+
+    <secttion id="cartas">
+      <div id="cardScreen"></div>
+      <div id="extrasViaje">
+        <div id="botones">
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btnMenu"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMenu"
+          >
+            Menues
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btnAñadirEquipaje"
+            data-bs-toggle="modal"
+            data-bs-target="#modalEquipaje"
+          >
+            Añadir Equipaje
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btnAñadirExtras"
+            data-bs-toggle="modal"
+            data-bs-target="#modalExtras"
+          >
+            Extras
+          </button>
+        </div>
+        <div class="modal" tabindex="-1" id="modalMenu">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content contenidoModalMenu">
+              <h5>Menúes disponibles</h5>
+              <div class="modal-body modalMenu" id=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" tabindex="-1" id="modalEquipaje">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content contenidoModalEquipaje">
+              <h5>Lleva mas equipaje contigo</h5>
+              <div class="modal-body modalEquipaje" id=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" tabindex="-1" id="modalExtras">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content contenidoModalExtras">
+              <h5>Añade algunos servicios post viaje</h5>
+              <div class="modal-body modalExtras" id=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secttion>
+
+    <!-- EMPIEZA MODAL USUARIO -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+          </div>
+
+          <div class="modal-body">
+            <div class="form-group">
+              <input
+                type="text"
+                id="usuario"
+                class="form-control"
+                placeholder="Usuario"
+              />
+
+              <input
+                type="password"
+                id="pass"
+                class="form-control"
+                placeholder="Contraseña"
+              />
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button id="btnIngresar" class="btn btn-primary">Ingresar</button>
+            <button id="btnRegistro" class="btn btn-primary">
+              Registrarse
+            </button>
+            <br />
+            <a href="" id="registro">Registrarse</a>
+            <br />
+          </div>
+          <p id="validacionesGral"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMINA MODAL USUARIO -->
+
+    <!-- EMPIEZA MODAL CARRITO -->
+
+    <div
+      class="modal"
+      id="modalDelCarro"
+      tabindex="-1"
+      aria-labelledby="modalDelCarroLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDelCarroLabel">Carrito</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalCarritoBody"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMINA MODAL CARRITO -->
+
+    <!-- EMPIEZA INFOPAISES -->
+
+    <section class="countryData" id="apiPaises">
+      <div class="contenedorCountry">
+        <h2 id="countryTitle">Conoce un poco mas sobre tu destino</h2>
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="infoPaises"
+        ></select>
+      </div>
+    </section>
+
+    <!-- TERMINA INFOPAISES -->
+
+    <!-- EMPIEZA PROMOCIONES -->
+
+    <section id="sectionPromociones">
+      <h2 class="tituloPromociones">¡Promociones por todos lados!</h2>
+      <p id="anchor-aparecerPromos">
+        Simplemente hace click <a href="">Aca</a>
+      </p>
+      <div class="contenedor-tarjetas"></div>
+    </section>
+
+    <!-- TERMINA PROMOCIONES -->
+
+    <!-- EMPIEZA SCRIPT -->
+
+    <script src="JS/jquery-3.6.min.js"></script>
+    <script src="JS/api.js"></script>
+    <script src="JS/dom.js"></script>
+    <script src="JS/objetos.js"></script>
+    <script src="JS/armadoViaje.js"></script>
+    <script src="JS/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

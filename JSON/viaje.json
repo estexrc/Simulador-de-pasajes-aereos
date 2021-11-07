@@ -1,0 +1,68 @@
+{
+  "destino": [
+    {
+      "id": 11,
+      "nombre": "Copenhague",
+      "pais": "Dinamarca",
+      "operadora": "DK Airlines",
+      "precio": 65000,
+      "cantidad": 0,
+      "img": "IMG/Copenhague.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Sydney",
+      "pais": "Australia",
+      "operadora": "Australian Airlines",
+      "precio": 45000,
+      "cantidad": 0,
+      "img": "IMG/Sydney.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Barcelona",
+      "pais": "España",
+      "operadora": "Iberia",
+      "precio": 30000,
+      "cantidad": 0,
+      "img": "IMG/Barcelona.jpg"
+    }
+  ],
+  "asiento": [
+    {
+      "id": 14,
+      "nombre": "Economico",
+      "precio": 15000
+    },
+    {
+      "id": 15,
+      "nombre": "Primera",
+      "precio": 25000
+    },
+    {
+      "id": 16,
+      "nombre": "Bussiness",
+      "precio": 40000
+    }
+  ],
+  "equipaje": [
+    {
+      "id": 17,
+      "nombre": "Mochila",
+      "tamaño": "40cm x 30cm x 15cm",
+      "precio": 0
+    },
+    {
+      "id": 18,
+      "nombre": "Carry On",
+      "tamaño": "55cm x 35cm x 25cm",
+      "precio": 5000
+    },
+    {
+      "id": 18,
+      "nombre": "Valija",
+      "tamaño": "90cm x 60cm x 45cm",
+      "precio": 10000
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "equipajeExtra": [
+    {
+      "id": 1,
+      "nombre": "Bolso de mano",
+      "descripcion": "Podrás llevar contigo en cabina un bolso de mano extra de hasta 30x20x15cm",
+      "precio": 2000,
+      "img": "IMG/equipaje/1.png",
+      "cantidad": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Carry On",
+      "descripcion": "Podrás llevar contigo en cabina una valija pequeña extra de hasta 60x25x15cm y máximo 10kg",
+      "precio": 3000,
+      "img": "IMG/equipaje/2.png",
+      "cantidad": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Valija",
+      "descripcion": "Podrás despachar una valija extra en la bodega de hasta 60x25x15cm y máximo 25kg",
+      "precio": 3500,
+      "img": "IMG/equipaje/3.png",
+      "cantidad": 0
+    }
+  ],
+
+  "extras": [
+    {
+      "id": 4,
+      "nombre": "Asistencia al viajero",
+      "precio": 1000,
+      "img": "IMG/extras/assist.png",
+      "cantidad": 0
+    },
+    {
+      "id": 5,
+      "nombre": "Alquiler de auto",
+      "precio": 3000,
+      "img": "IMG/extras/auto.png",
+      "cantidad": 0
+    },
+    {
+      "id": 6,
+      "nombre": "Alquiler de habitación",
+      "precio": 2500,
+      "img": "IMG/extras/habitacion.png",
+      "cantidad": 0
+    }
+  ],
+
+  "menu": [
+    {
+      "id": 7,
+      "nombre": "Carne con verduras",
+      "descripcion": "Excelentes cortes de carne horneados con las verduras de estación que mejor combinan",
+      "precio": 500,
+      "img": "IMG/menu/carne.png",
+      "cantidad": 0
+    },
+    {
+      "id": 8,
+      "nombre": "Fideos con crema",
+      "descripcion": "Deliciosas pastas caseras amasadas por nuestros cheffs combinadas con salsa a elección",
+      "precio": 350,
+      "img": "IMG/menu/fideos.png",
+      "cantidad": 0
+    },
+    {
+      "id": 9,
+      "nombre": "Medallon vegano",
+      "descripcion": "Todo el sabor de las mejores legumbres junto a una ensalada fresca ideal para el verano",
+      "precio": 400,
+      "img": "IMG/menu/vgta.png",
+      "cantidad": 0
+    },
+    {
+      "id": 10,
+      "nombre": "Bocha de helado",
+      "descripcion": "Los mejores sabores de los maestros artesanos argentinos",
+      "precio": 200,
+      "img": "IMG/menu/bocha.png",
+      "cantidad": 0
+    }
+  ]
+}

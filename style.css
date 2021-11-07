@@ -1,0 +1,329 @@
+/* --- GENERAL --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  background-color: rgb(29, 77, 139);
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-left: 2.6vw;
+  flex-grow: 2;
+}
+.anchorH1 {
+  color: white;
+  text-decoration: none;
+}
+.anchorH1:hover {
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-link:focus {
+  color: #fff;
+}
+/* --- CARRUSEL ---  */
+
+.carrusel {
+  position: relative;
+  z-index: 1;
+}
+.carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70vh;
+}
+.carousel-item1 {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6), transparent),
+    url(IMG/Copenhague.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.carousel-item2 {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6), transparent),
+    url(IMG/Sydney.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.carousel-item3 {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6), transparent),
+    url(IMG/Barcelona.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.carousel-caption {
+  position: absolute;
+  margin: 10vh 0 10vh 40vw;
+  padding-top: 3%;
+  height: 40vh;
+  width: 40%;
+}
+
+.tituloCaption {
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-shadow: #000;
+  text-align: center;
+}
+.parrafoCaption {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: #000;
+  text-align: center;
+}
+/* --- FORMULARIO ---  */
+
+#formulario {
+  width: 30%;
+  height: 40vh;
+  background-color: rgba(29, 77, 139, 0.8);
+  border-radius: 2%;
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 12vw;
+  z-index: 20;
+}
+.cabecera {
+  display: flex;
+  align-items: flex-end;
+}
+.tituloForm {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+.selectDestino,
+.selectAsiento,
+.selectEquipaje {
+  margin: 2.5vh 5% 0 5%;
+  width: 90%;
+  height: 4vh;
+}
+#btnEnviar {
+  margin-bottom: 1vh;
+}
+#validaciones {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  margin: 0 5% 0 5%;
+}
+/* --- CARTAS DE VIAJE ---  */
+
+#cartas {
+  max-height: 90vh;
+}
+#cardScreen {
+  height: 100%;
+  margin-right: 3vw;
+  padding-left: 10vw;
+}
+#divCard,
+.cardPromo {
+  width: 80%;
+  margin: 10vh 5vw;
+  background-color: rgb(29, 77, 139);
+  border-radius: 20px;
+  text-align: center;
+}
+#contenedorInfoViaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 90%;
+  margin: 3.5vh 5% 2vh 5%;
+}
+h3 {
+  margin: 2vh;
+  font-size: 1.6rem;
+  color: aliceblue;
+  font-style: italic;
+}
+.textoDiv {
+  margin: 3vh;
+  font-size: 1.4rem;
+  color: aliceblue;
+  text-align: start;
+}
+
+/* --- PROMOCIONES ---  */
+
+#sectionPromociones {
+  margin-top: 10vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#promociones {
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+}
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
+  width: 100%;
+}
+#cardPromociones {
+  margin: 0 5vw;
+  width: 30%;
+}
+.textoPromo {
+  color: green;
+}
+#btnPromociones {
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+
+/* --- LOGIN FORMULARIO ---  */
+.modalLogin {
+  width: 30vw;
+  height: 45vh;
+}
+.modal-body {
+  padding: 2vh 2vw;
+}
+.modal-title {
+  margin-bottom: 2vh;
+}
+.form-control {
+  margin: 2vh 0;
+}
+.btnLogin {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1vh;
+}
+
+/* --- API SOBRE PAISES ---  */
+
+.contenedorCountry {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#infoPaises,
+#btnPais {
+  width: 50%;
+}
+
+#countryTitle {
+  width: 80%;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.datosDePaises {
+  width: 80%;
+  margin-top: 2vh;
+  text-align: center;
+  border: solid #000 0.5px;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+/* --- MODAL MENU ---  */
+
+/* --- MODAL EQUIPAJE ---  */
+
+.modalEquipaje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cartaEquipaje {
+  width: 33%;
+  height: 100%;
+  margin: 10px 10px;
+}
+.contenidoModalMenu,
+.contenidoModalEquipaje,
+.contenidoModalExtras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- MODAL EXTRAS ---  */
+
+.modalExtras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cartaExtras {
+  width: 33%;
+  height: 100%;
+  margin: 10px 10px;
+}
+
+/* --- CARRITO Y SUS ELEMENTOS ---  */
+
+#modalCarrito {
+  margin-right: 2vw;
+  background-color: transparent;
+  border: none;
+}
+#imgCarrito {
+  width: 300px;
+  height: 300px;
+  margin-left: 30%;
+}
+.divCarrito {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4vh;
+}
+.carritoNombreProducto {
+  margin-bottom: 2vh;
+}
+.textoProductosCarrito {
+  text-align: center;
+}
+#contenedorBotonesCarro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.btnControlCarro {
+  width: 3vw;
+  height: 6vh;
+  margin: 2vh 1vw;
+  border-radius: 15px;
+}
+.mensajeCarritoVacio {
+  color: rgba(29, 77, 139, 0.8);
+}
